@@ -3,14 +3,50 @@
 }
 
 body{
+    z-index: 3;
     background-color: rgb(61, 61, 61);
+    background-image: url("/images/redflames.jpg");
     color:white;
 }
 
-.h1green{
-    color:rgb(0, 255, 0);
-    font-size:400%;
+/*Varför fungerar inte hero-headern?*/
+.myHeader{
+    z-index: 2;
+    background-image: url(images/redflames.jpg);
 }
+
+
+.h1red{
+    color:rgb(230, 0, 0);
+    /*shadow*/
+    font-size:400%;
+    text-shadow: 2px 2px 5px black;
+    
+}
+
+.tooltiptext {
+    font-size: small;;
+    visibility: hidden;
+    width: auto;
+    background-color: black;
+    color: #fff;        
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position:absolute;
+    z-index: 1;
+
+    opacity: 0;
+  transition: opacity 4s;
+  }
+  
+  .h1red:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
 
 ::placeholder{
     color:black;
@@ -18,7 +54,38 @@ body{
 
 input, textarea{
     border-style: solid;
-    border-color:rgb(0, 255, 0);
+    border-color:rgb(230, 0, 0);
     outline-style: solid;
     outline-color: black;
 }
+
+  
+  /* top navigation bar */
+  .topnav {
+    overflow: hidden;
+    margin: 10%;
+    margin-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgba(27, 27, 27, 0.600);
+  }
+  
+  /* LÄGG TILL ATT MINDRE SKÄRMAR SKA KUNNA ANVÄNDAS OCH DET SER BÄTTRE UT DÅ
+    Style the topnav links */
+  .topnav a {
+    float:left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 3% 3%;
+    text-decoration: none;
+    margin:3px 5px;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+      font-weight: bold;
+      text-shadow:2px 2px 5px red;
+    background-color: black;
+    box-shadow: 0px 6px 6px 0 rgba(230, 0, 0, 0.719), 0 6px 10px 0 rgba(230, 0, 0, 0.719);
+  }

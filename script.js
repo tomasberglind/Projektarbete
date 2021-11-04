@@ -36,7 +36,6 @@ function submitForm(){
     `; 
     
     document.getElementById("message").innerHTML = message;
-    
  
     return false;
 

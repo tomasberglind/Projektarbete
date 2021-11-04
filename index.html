@@ -3,56 +3,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" Content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Uppgift gästboken</title> 
+  <title>Projekt Hemsida</title> 
   <link rel="stylesheet" href="stylesheet.css">
+  <link rel="icon" href="favicon.ico" type="image/ico"/>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
 </head>
 
 <body>
-
-<h1 class="h1green">Gästbok</h1>
-
-<form method="post" name="guestBook" onsubmit="return submitForm()">
-<div>
-    <label for="namn">Namn:
+    <div class="myHeader">
         <br>
-        <input type="text" name="namn" id="namn" placeholder="Ange ditt namn" required>
-    </label>
+        <h1 class="h1red">Projekt Hemsida<span class="tooltiptext">Tooltip text</span></h1>
+<!--innästlad så att det flyter ovanför bakgrundsbilden-->    
+    <div class="topnav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </div>
+      <br>
+      <br>
 </div>
-<br>
-<div>
-    <label for="epost">E-post:
-        <br>
-        <input type="email" name="epost" id="epost" placeholder="Ange din e-post" required>
-    </label>
-</div>
-<br>
-<div>
-    <label for="telefon">Telefon-nummer:
-        <br>
-        <input type="teö" name="telefon" id="telefon" placeholder="Ange ditt telefon-nummer">
-    </label>
-</div>
-<br>
-<div>
-    <label for="meddelande">Meddelande
-    <br>
-    <textarea name="meddelande" id="meddelande"></textarea>
-    </label>
-</div>
-<br>
-<div>
-    <input type="checkbox" value="gdpr" name="gdpr" id="gdpr" required> Jag godkänner att mina uppgifter lagras.
-</div>
-<br>
-<input type="submit">
-</form>
-<br>
-<br>
-<h2>Inlägg</h2>
-<p id="message"></p>
-<script src="script.js"></script>
 
 
+  <script src="script.js"></script>
 </body>
 
 
